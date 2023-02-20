@@ -5,10 +5,20 @@
     box-sizing: border-box;
     border: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
+    color: blanchedalmond;
 }
 
 body{
     background-color: slategrey;
+    /*overflow: hidden;*/
+}
+
+h1,h2{
+    text-align: center;
+}
+
+li{
+    list-style: none;
 }
 
 p{
@@ -38,9 +48,48 @@ button{
 /*quiz window*/
 .quiz{
     background-color: rgb(53, 53, 53);
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
   
 }
 
 /*quiz intro*/
+.intro, main{
+    margin-top: 20vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: dimgrey;
+}
 
+.intro p{
+    text-align: center;
+}
+
+.intro button{
+    display: block;
+    margin: 0 auto;
+
+}
 /*quiz content*/
+
+main{
+    display: flex;
+}
+
+/*question screen*/
+.quiz-question{
+    display: none;
+}
+/*finish screen*/
+.quiz-finished{
+    display: none;
+}
+
+/*highscores*/
+.highscores{
+    display: none;
+}

@@ -9,15 +9,40 @@
 <body>
     <div class="window" id="window">
         <div class="top-bar" id="top-bar">
-            <button>view high scores</button>
-            <p>timer</p>
+            <button id="highscores">view high scores</button>
+            <p id="countdown"></p>
         </div>
         <div class="quiz" id="quiz">
-            <header class="intro">Intro</header>
+            <header class="intro" id="intro">
+                <h1>Welcome to the JS quiz</h1>
+                <p>to get started press the start button!</p>
+                <button id="start-quiz">START!</button>
+            </header>
             <main>
-
+                <section class="quiz-question" id="quiz-question">
+                    <ul>
+                        <li><button>answer</button></li>
+                        <li><button>answer</button></li>
+                        <li><button>answer</button></li>
+                        <li><button>answer</button></li>
+                        <li><button>answer</button></li>
+                    </ul>
+                </section>
+                <section class="quiz-finished">
+                    <h2>quiz finished</h2>
+                    <p>your score is:00</p>
+                    <label for="">your initials</label>
+                    <input type="text">
+                    <button>submit</button>
+                </section>
+                <section class="highscores">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </section>
             </main>
         </div>
     </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
